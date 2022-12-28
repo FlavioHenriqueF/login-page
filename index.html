@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="./responsive.css"
+      media="screen and (max-width: 1254px)"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Marketing Creativo</h1>
+      <div class="menu-section">
+        <div class="menu-toggle" onclick="menu()">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+            <li class="faça-login"><a href="#">Faça login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div>
+          <h1><span>Inscreva-se agora</span> na Newslatter</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            corrupti, aliquam mollitia eveniet earum aperiam error, ipsa
+            veritatis recusandae officia laudantium nam vitae maiores.
+          </p>
+
+          <div class="login">
+            <input placeholder="Nome" />
+            <input type="email" placeholder="E-mail" />
+            <div class="enviar-button">
+              <button><a href="#">Enviar</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="login-image">
+          <img src="./assets/woman.svg" alt="" />
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

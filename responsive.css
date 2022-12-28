@@ -1,0 +1,247 @@
+html {
+  font-size: 55%;
+}
+
+.login-image img {
+  width: 600px;
+}
+
+.container div h1 {
+  width: 400px;
+}
+
+.container div p {
+  width: 400px;
+}
+
+@media (max-width: 1085px) {
+  .login-image img {
+    width: 550px;
+  }
+
+  .container div h1 {
+    width: 400px;
+  }
+
+  .container div p {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1013px) {
+  .login-image img {
+    width: 500px;
+  }
+
+  .container div h1 {
+    width: 450px;
+  }
+
+  .container div p {
+    width: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container div h1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container div p {
+    text-align: center;
+    width: 400px;
+    margin-left: 30px;
+  }
+
+  .login {
+    align-items: center;
+  }
+
+  .login-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: -1;
+    width: 450px;
+    height: 250px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 877px) {
+  nav {
+    display: none;
+  }
+
+  .one,
+  .two,
+  .three {
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+
+    transition-duration: 0.3s;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  /* full screen */
+
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #222222;
+
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on nav {
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 10rem;
+    top: 5.5rem;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 4rem;
+    display: block;
+    margin-top: 3rem;
+    width: 180px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #9b06ce;
+    border-radius: 13px;
+  }
+
+  .faça-login {
+    border: none;
+  }
+}
+
+@media (max-width: 448px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .container div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container div h1 {
+    font-size: 3.5rem;
+    width: 250px;
+  }
+
+  .container div p {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    width: 300px;
+  }
+
+  .login input {
+    width: 220px;
+  }
+
+  .enviar-button button {
+    width: 118px;
+  }
+
+  .login-image {
+    width: 100px;
+  }
+
+  .login-image img {
+    width: 383px;
+  }
+
+  header {
+    padding: 0 2rem;
+  }
+
+  .menu-toggle {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 425px) {
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 2rem;
+    top: 4.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .login-image img {
+    width: 355px;
+  }
+}
+
+@media (max-width: 334px) {
+  .login-image img {
+    width: 348px;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  header {
+    padding: 0 2rem;
+  }
+
+  .menu-toggle {
+    margin-right: none;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 2rem;
+    top: 3.5rem;
+  }
+}
